@@ -78,22 +78,28 @@ function render(variables = {}) {
             <li><a href=${
               variables.twitter == null
                 ? "javascript:void(0);"
-                : variables.twitter + " target='_blank'"
+                : "https://twitter.com/" +
+                  variables.twitter +
+                  " target='_blank'"
             } ><i class="fab fa-twitter"></i></a></li>
             <li><a href=${
               variables.github == null
                 ? "javascript:void(0);"
-                : variables.github + " target='_blank'"
+                : "https://github.com/" + variables.github + " target='_blank'"
             }><i class="fab fa-github"></i></a></li>
             <li><a href=${
               variables.linkedin == null
                 ? "javascript:void(0);"
-                : variables.linkedin + " target='_blank'"
+                : "https://www.linkedin.com/in/" +
+                  variables.linkedin +
+                  " target='_blank'"
             }><i class="fab fa-linkedin"></i></a></li>
             <li><a href=${
               variables.instagram == null
                 ? "javascript:void(0);"
-                : variables.instagram + " target='_blank'"
+                : "https://www.instagram.com/" +
+                  variables.instagram +
+                  " target='_blank'"
             }><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
